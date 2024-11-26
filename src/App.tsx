@@ -1,21 +1,18 @@
 import './App.css'
-import PropiedadesComponente from "./components/props/PropiedadesComponente.tsx";
-import SimpleComponent from "./components/props/SimpleComponent.tsx";
-import SimplePropFC from "./components/props/SimplePropFC.tsx";
-import VariablesLocales from "./components/props/VariablesLocales.tsx";
+import BotonConEvento from "./components/eventos/BotonConEvento.tsx";
+import EventosComponente from "./components/eventos/EventosComponente.tsx";
+import EventosComponenteSencillo from "./components/eventos/EventosComponenteSencillo.tsx";
+
 
 
 function App() {
 
-  return (
+    return (
     <>
       <div className="card">
-          <PropiedadesComponente/>
-          <PropiedadesComponente age={20} email="pepesan@gmail.com" name="Pepesan"/>
-          <SimpleComponent message="Mensaje"/>
-          <SimplePropFC/>
-          <SimplePropFC mensaje="Mi mensaje"/>
-          <VariablesLocales/>
+          <BotonConEvento/>
+          <EventosComponente/>
+          <EventosComponenteSencillo/>
       </div>
     </>
   )
