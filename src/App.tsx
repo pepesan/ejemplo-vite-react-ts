@@ -1,18 +1,14 @@
 import './App.css'
-import Jedi from "./components/Jedi.tsx";
-import Sith from "./components/Sith.tsx";
-import MiComponente from "./components/MiComponente.tsx";
-import ConstComponent from "./components/ConstComponent.tsx";
+import EstadoComponente from "./components/estados/EstadoComponente.tsx";
+import EstadoSencillo from "./components/estados/EstadoSencillo.tsx";
 
 function App() {
 
   return (
     <>
       <div className="card">
-          <Jedi/>
-          <Sith/>
-          <MiComponente/>
-          <ConstComponent/>
+          <EstadoComponente/>
+          <EstadoSencillo/>
       </div>
     </>
   )
