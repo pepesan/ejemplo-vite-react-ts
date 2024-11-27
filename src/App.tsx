@@ -1,24 +1,21 @@
 import './App.css'
-import FormularioBasicoComponente from "./components/formularios/FormularioBasicoComponente.tsx";
-import FormularioBasicoComponenteCreateRef from "./components/formularios/FormularioBasicoComponenteCreateRef.tsx";
-import LoginFormValidationComponente from "./components/formularios/LoginFormValidationComponente.tsx";
-import FormularioBasicoFC from "./components/formularios/FormularioBasicoFC.tsx";
-import LoginFormValidationFC from "./components/formularios/LoginFormValidationFC.tsx";
-
-
-
+import ComponenteAlarma from "./components/react-bootstrap/ComponenteAlarma.tsx";
+import AccordionComponent from "./components/react-bootstrap/AccordionComponent.tsx";
+import CardComponent from "./components/react-bootstrap/CardComponent.tsx";
+import DropDownComponent from "./components/react-bootstrap/DropDownComponent.tsx";
+import ModalComponent from "./components/react-bootstrap/ModalComponent.tsx";
+import NavBarComponent from "./components/react-bootstrap/NavBarComponent.tsx";
 
 function App() {
 
     return (
     <>
-      <div className="card">
-        <FormularioBasicoFC/>
-        <FormularioBasicoComponente/>
-        <FormularioBasicoComponenteCreateRef/>
-        <LoginFormValidationComponente/>
-          <LoginFormValidationFC/>
-      </div>
+        <NavBarComponent/>
+        <ComponenteAlarma/>
+        <AccordionComponent/>
+        <CardComponent/>
+        <DropDownComponent/>
+        <ModalComponent/>
     </>
   )
 }
