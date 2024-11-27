@@ -1,8 +1,10 @@
 import './App.css'
-import CondicionalComponent from "./components/vista/CondicionalComponent.tsx";
-import ListadoComponent from "./components/vista/ListadoComponent.tsx";
-import CicloDeVida from "./components/ciclosdevida/CicloDeVida.tsx";
-import MostrarElementoComponent from "./components/vista/MostrarElementoComponent.tsx";
+import FormularioBasicoComponente from "./components/formularios/FormularioBasicoComponente.tsx";
+import FormularioBasicoComponenteCreateRef from "./components/formularios/FormularioBasicoComponenteCreateRef.tsx";
+import LoginFormValidationComponente from "./components/formularios/LoginFormValidationComponente.tsx";
+import FormularioBasicoFC from "./components/formularios/FormularioBasicoFC.tsx";
+import LoginFormValidationFC from "./components/formularios/LoginFormValidationFC.tsx";
+
 
 
 
@@ -11,10 +13,11 @@ function App() {
     return (
     <>
       <div className="card">
-          <CondicionalComponent/>
-          <ListadoComponent/>
-          <CicloDeVida/>
-          <MostrarElementoComponent/>
+        <FormularioBasicoFC/>
+        <FormularioBasicoComponente/>
+        <FormularioBasicoComponenteCreateRef/>
+        <LoginFormValidationComponente/>
+          <LoginFormValidationFC/>
       </div>
     </>
   )
