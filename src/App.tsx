@@ -1,23 +1,17 @@
 import './App.css'
-import ComponenteAlarma from "./components/react-bootstrap/ComponenteAlarma.tsx";
-import AccordionComponent from "./components/react-bootstrap/AccordionComponent.tsx";
-import CardComponent from "./components/react-bootstrap/CardComponent.tsx";
-import DropDownComponent from "./components/react-bootstrap/DropDownComponent.tsx";
-import ModalComponent from "./components/react-bootstrap/ModalComponent.tsx";
-import NavBarComponent from "./components/react-bootstrap/NavBarComponent.tsx";
+import AppRoutes from "./components/pages/AppRoutes.tsx";
+import Menu from "./components/pages/Menu.tsx";
+import Footer from "./components/pages/Footer.tsx";
 
 function App() {
 
     return (
-    <>
-        <NavBarComponent/>
-        <ComponenteAlarma/>
-        <AccordionComponent/>
-        <CardComponent/>
-        <DropDownComponent/>
-        <ModalComponent/>
-    </>
-  )
+        <>
+            <Menu/>
+            <AppRoutes/>
+            <Footer/>
+        </>
+    )
 }
 
 export default App
