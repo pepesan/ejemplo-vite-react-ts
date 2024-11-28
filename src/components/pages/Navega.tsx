@@ -5,12 +5,15 @@ import {
 } from "react-router";
 
 function Navega () {
+    // recupera la función navigate(ruta)
     let navigate = useNavigate();
     let location = useLocation();
     let params = useParams();
 
     function onclick() {
+        // realizas la accion
         console.log("navega");
+        // haces el salto a la url
         navigate("/");
     }
 

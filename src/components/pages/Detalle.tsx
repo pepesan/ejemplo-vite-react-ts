@@ -2,7 +2,9 @@
 import {Link, useParams,useNavigate} from "react-router";
 
 function Detalle() {
+        // recoge parámetros de la url
         let params = useParams();
+        // permite navegar a una url
         let navigate = useNavigate();
 
         return (
