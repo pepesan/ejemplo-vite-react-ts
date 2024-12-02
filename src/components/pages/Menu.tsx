@@ -12,7 +12,7 @@ const Menu = () => {
 
             <Navbar expand="lg" className="bg-body-tertiary">
                 <Container>
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
@@ -35,6 +35,43 @@ const Menu = () => {
                             <LinkContainer to="/ciclodevida">
                                 <Nav.Link >Ciclo de Vida</Nav.Link>
                             </LinkContainer>
+                            <NavDropdown title="Hooks" id="basic-nav-dropdown">
+                                <LinkContainer to="/state">
+                                    <NavDropdown.Item>useState</NavDropdown.Item>
+                                </LinkContainer>
+                                <LinkContainer to="/effect">
+                                    <NavDropdown.Item>
+                                        UseEffect
+                                    </NavDropdown.Item>
+                                </LinkContainer>
+                                <LinkContainer to="/ref">
+                                    <NavDropdown.Item>
+                                        UseRef
+                                    </NavDropdown.Item>
+                                </LinkContainer>
+                            </NavDropdown>
+                            <NavDropdown title="Peticiones" id="basic-nav-dropdown">
+                                <LinkContainer to="/datafetcher">
+                                    <NavDropdown.Item>
+                                        Datafetcher
+                                    </NavDropdown.Item>
+                                </LinkContainer>
+                                <LinkContainer to="/partidos">
+                                    <NavDropdown.Item>
+                                        Axios (Partidos)
+                                    </NavDropdown.Item>
+                                </LinkContainer>
+                                <LinkContainer to="/partidosfc">
+                                    <NavDropdown.Item>
+                                        Axios (Partidos) FC
+                                    </NavDropdown.Item>
+                                </LinkContainer>
+                                <LinkContainer to="/post">
+                                    <NavDropdown.Item>
+                                        Axios Post FC
+                                    </NavDropdown.Item>
+                                </LinkContainer>
+                            </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

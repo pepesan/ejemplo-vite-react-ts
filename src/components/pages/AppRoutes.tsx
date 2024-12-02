@@ -5,6 +5,13 @@ import Listado from "./Listado.tsx";
 import Detalle from "./Detalle.tsx";
 import CicloDeVida from "../ciclosdevida/CicloDeVida.tsx";
 import AddFormPage from "./AddFormPage.tsx";
+import HookEstadoComponente from "../hooks/HookEstadoComponente.tsx";
+import HookEffect from "../hooks/HookEffect.tsx";
+import DataFetcher from "../httprequest/DataFetcher.tsx";
+import PeticionesWeb from "../httprequest/PeticionesWeb.tsx";
+import FocusInput from "../hooks/FocusInput.tsx";
+import PeticionesWebFC from "../httprequest/PeticionesWebFC.tsx";
+import PostDataComponent from "../httprequest/PostDataComponent.tsx";
 
 const AppRoutes = () => {
     return (
@@ -16,6 +23,13 @@ const AppRoutes = () => {
           <Route path="listado" element={<Listado/>} />
           <Route path="listado/:id" element={<Detalle></Detalle>} />
           <Route path="ciclodevida" element={<CicloDeVida />} />
+          <Route path="state" element={<HookEstadoComponente />} />
+          <Route path="effect" element={<HookEffect />} />
+          <Route path="ref" element={<FocusInput />} />
+          <Route path="datafetcher" element={<DataFetcher />} />
+          <Route path="partidos" element={<PeticionesWeb />} />
+          <Route path="partidosfc" element={<PeticionesWebFC />} />
+          <Route path="post" element={<PostDataComponent />} />
           <Route path="*" element={<NotFound/>}/>
       </Routes>
   )
