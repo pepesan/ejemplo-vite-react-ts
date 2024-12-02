@@ -4,25 +4,18 @@ import './PeticionesWeb.css';
 import Partido from "./Partido";
 import ShowPartido from "./ShowPartido";
 
-// Tipo de Dato para Post
-type CreateUserResponse = {
-    name: string;
-    job: string;
-    id: string;
-    createdAt: string;
-};
 
 const PeticionesWebFC: React.FC = () => {
-    const [persons, setPersons] = useState<Partido[]>([]);
+    const [partidos, setPartidos] = useState<Partido[]>([]);
 
     // Función para recargar datos
     const recarga = () => {
         axios
             .get(`https://pactometro.cursosdedesarrollo.com/resultados.json`)
             .then(res => {
-                const persons: Partido[] = res.data;
-                console.log(persons);
-                setPersons(persons);
+                const partidos: Partido[] = res.data;
+                console.log(partidos);
+                setPartidos(partidos);
             })
             .catch(error => {
                 console.log("Manejo del error");
@@ -39,33 +32,6 @@ const PeticionesWebFC: React.FC = () => {
             });
     };
 
-    // Función para cargar un POST
-    const cargaPost = async () => {
-        try {
-            const { data } = await axios.post<CreateUserResponse>(
-                'https://reqres.in/api/users',
-                { name: 'John Smith', job: 'manager' },
-                {
-                    headers: {
-                        'Content-Type': 'application/json',
-                        Accept: 'application/json',
-                    },
-                },
-            );
-
-            console.log(JSON.stringify(data, null, 4));
-
-            return data;
-        } catch (error) {
-            if (axios.isAxiosError(error)) {
-                console.log('error message: ', error.message);
-                return error.message;
-            } else {
-                console.log('unexpected error: ', error);
-                return 'An unexpected error occurred';
-            }
-        }
-    };
 
     // useEffect para cargar datos al montar el componente
     useEffect(() => {
@@ -84,12 +50,11 @@ const PeticionesWebFC: React.FC = () => {
                 </tr>
                 </thead>
                 <tbody>
-                {persons.map((partido: Partido) => (
+                {partidos.map((partido: Partido) => (
                     <ShowPartido key={partido.id} partido={partido} />
                 ))}
                 </tbody>
             </table>
-            <button onClick={cargaPost}>Carga Post</button>
         </div>
     );
 };

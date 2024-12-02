@@ -71,6 +71,11 @@ const Menu = () => {
                                         Axios Post FC
                                     </NavDropdown.Item>
                                 </LinkContainer>
+                                <LinkContainer to="/postformik">
+                                    <NavDropdown.Item>
+                                        Axios Post FC Formik
+                                    </NavDropdown.Item>
+                                </LinkContainer>
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>

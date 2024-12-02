@@ -12,6 +12,7 @@ import PeticionesWeb from "../httprequest/PeticionesWeb.tsx";
 import FocusInput from "../hooks/FocusInput.tsx";
 import PeticionesWebFC from "../httprequest/PeticionesWebFC.tsx";
 import PostDataComponent from "../httprequest/PostDataComponent.tsx";
+import PostFormikComponent from "../httprequest/PostFormikComponent.tsx";
 
 const AppRoutes = () => {
     return (
@@ -30,6 +31,7 @@ const AppRoutes = () => {
           <Route path="partidos" element={<PeticionesWeb />} />
           <Route path="partidosfc" element={<PeticionesWebFC />} />
           <Route path="post" element={<PostDataComponent />} />
+          <Route path="postformik" element={<PostFormikComponent />} />
           <Route path="*" element={<NotFound/>}/>
       </Routes>
   )

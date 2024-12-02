@@ -7,13 +7,19 @@ const PostDataComponent = () => {
 
     const handlePostRequest = async () => {
         try {
-            const res = await axios.post("https://jsonplaceholder.typicode.com/posts", {
+            const res =
+                await axios.post(
+                // primer parametro url
+                "https://jsonplaceholder.typicode.com/posts",
+                // segunda parametro: dato a enviar
+                {
                 title: "foo",
                 body: data,
                 userId: 1,
-            });
+                }
+            );
             setResponse(res.data); // Almacena la respuesta en el estado
-            setData("")
+            setData("");
         } catch (error) {
             console.error("Error al realizar la llamada POST", error);
             setResponse("Error en la solicitud.");
