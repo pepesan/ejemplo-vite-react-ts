@@ -6,7 +6,7 @@ const FocusInput = () => {
     const handleFocus = () => {
         // Accede al input directamente usando inputRef
         if (inputRef.current) {
-            inputRef.current.focus(); // Aplica el enfoque al elemento referenciado
+            (inputRef.current as HTMLInputElement).focus(); // Aplica el enfoque al elemento referenciado
         }
     };
 

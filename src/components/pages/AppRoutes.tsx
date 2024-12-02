@@ -13,9 +13,11 @@ import FocusInput from "../hooks/FocusInput.tsx";
 import PeticionesWebFC from "../httprequest/PeticionesWebFC.tsx";
 import PostDataComponent from "../httprequest/PostDataComponent.tsx";
 import PostFormikComponent from "../httprequest/PostFormikComponent.tsx";
+import ExpensiveCalculationComponent from "../hooks/ExpensiveCalculationComponent.tsx";
+import MiContenedor from "../context/MiContenedor.tsx";
 
 const AppRoutes = () => {
-    return (
+      return (
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
@@ -27,11 +29,13 @@ const AppRoutes = () => {
           <Route path="state" element={<HookEstadoComponente />} />
           <Route path="effect" element={<HookEffect />} />
           <Route path="ref" element={<FocusInput />} />
+          <Route path="memo" element={<ExpensiveCalculationComponent />} />
           <Route path="datafetcher" element={<DataFetcher />} />
           <Route path="partidos" element={<PeticionesWeb />} />
           <Route path="partidosfc" element={<PeticionesWebFC />} />
           <Route path="post" element={<PostDataComponent />} />
           <Route path="postformik" element={<PostFormikComponent />} />
+          <Route path="contexto" element={<MiContenedor />} />
           <Route path="*" element={<NotFound/>}/>
       </Routes>
   )

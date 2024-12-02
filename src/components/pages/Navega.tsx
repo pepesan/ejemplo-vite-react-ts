@@ -6,9 +6,9 @@ import {
 
 function Navega () {
     // recupera la función navigate(ruta)
-    let navigate = useNavigate();
-    let location = useLocation();
-    let params = useParams();
+    const navigate = useNavigate();
+    const location = useLocation();
+    const params = useParams();
 
     function onclick() {
         // realizas la accion

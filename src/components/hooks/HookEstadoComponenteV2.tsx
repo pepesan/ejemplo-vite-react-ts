@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 
 function HookEstadoComponenteV2() {
 // Declara una nueva variable de estado, que llamaremos "count".

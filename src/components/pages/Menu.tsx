@@ -49,6 +49,11 @@ const Menu = () => {
                                         UseRef
                                     </NavDropdown.Item>
                                 </LinkContainer>
+                                <LinkContainer to="/memo">
+                                    <NavDropdown.Item>
+                                        UseMemo
+                                    </NavDropdown.Item>
+                                </LinkContainer>
                             </NavDropdown>
                             <NavDropdown title="Peticiones" id="basic-nav-dropdown">
                                 <LinkContainer to="/datafetcher">
@@ -77,6 +82,9 @@ const Menu = () => {
                                     </NavDropdown.Item>
                                 </LinkContainer>
                             </NavDropdown>
+                            <LinkContainer to="/contexto">
+                                <Nav.Link >Contexto</Nav.Link>
+                            </LinkContainer>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
