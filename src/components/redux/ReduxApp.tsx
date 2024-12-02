@@ -1,5 +1,4 @@
 // Paso 4: Uso del Store con un componente principal
-import React from "react";
 import List from "./List";
 import Form from "./Form";
 import {Provider} from "react-redux";
