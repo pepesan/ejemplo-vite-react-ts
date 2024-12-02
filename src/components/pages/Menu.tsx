@@ -85,6 +85,9 @@ const Menu = () => {
                             <LinkContainer to="/contexto">
                                 <Nav.Link >Contexto</Nav.Link>
                             </LinkContainer>
+                            <LinkContainer to="/redux">
+                                <Nav.Link >Redux</Nav.Link>
+                            </LinkContainer>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
