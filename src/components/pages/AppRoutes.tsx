@@ -16,6 +16,7 @@ import PostFormikComponent from "../httprequest/PostFormikComponent.tsx";
 import ExpensiveCalculationComponent from "../hooks/ExpensiveCalculationComponent.tsx";
 import MiContenedor from "../context/MiContenedor.tsx";
 import ReduxAPP from "../redux/ReduxApp.tsx";
+import ClienteForm from "../formularios/ClienteForm.tsx";
 
 const AppRoutes = () => {
       return (
@@ -36,6 +37,7 @@ const AppRoutes = () => {
           <Route path="partidosfc" element={<PeticionesWebFC />} />
           <Route path="post" element={<PostDataComponent />} />
           <Route path="postformik" element={<PostFormikComponent />} />
+          <Route path="clienteform" element={<ClienteForm />} />
           <Route path="contexto" element={<MiContenedor />} />
           <Route path="redux" element={<ReduxAPP />} />
           <Route path="*" element={<NotFound/>}/>

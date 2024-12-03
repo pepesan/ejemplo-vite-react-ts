@@ -32,6 +32,11 @@ const Menu = () => {
                                     </NavDropdown.Item>
                                 </LinkContainer>
                             </NavDropdown>
+                            <NavDropdown title="Formularios" id="basic-nav-dropdown">
+                                <LinkContainer to="/clienteform">
+                                    <NavDropdown.Item>Cliente Form</NavDropdown.Item>
+                                </LinkContainer>
+                            </NavDropdown>
                             <LinkContainer to="/ciclodevida">
                                 <Nav.Link >Ciclo de Vida</Nav.Link>
                             </LinkContainer>
