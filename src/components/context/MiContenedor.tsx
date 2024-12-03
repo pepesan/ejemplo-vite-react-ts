@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { LoginContext } from "./contexto";
 import { Login } from "./Login";
 import { Home } from "./Home";
+import {Settings} from "./Settings.tsx";
 
 function MiContenedor() {
     // Define el estado de inicio de sesión
@@ -14,6 +15,7 @@ function MiContenedor() {
             {/* Renderiza los componentes Login y Home */}
             <Login />
             <Home />
+            <Settings/>
         </LoginContext.Provider>
     );
 }
