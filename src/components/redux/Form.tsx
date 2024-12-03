@@ -1,4 +1,4 @@
-// Paso 8: Componente de Formulario
+// Paso 7: Componente de Formulario
 import {ChangeEvent, Component, FormEvent} from "react";
 import { connect } from "react-redux";
 // importa el dispatcher (pasa llamar a los métodos del store)

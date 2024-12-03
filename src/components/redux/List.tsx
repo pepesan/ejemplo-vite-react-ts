@@ -1,4 +1,4 @@
-// Paso 7: Componente de Listado
+// Paso 6: Componente de Listado
 import {Component} from "react";
 import { connect } from "react-redux";
 import {GlobalState} from "./GlobalState";

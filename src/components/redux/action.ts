@@ -1,4 +1,4 @@
-// Paso 6: Define las acciones realizables y las Props
+// Paso 5: Define las acciones realizables y las Props
 
 import {ADD_ARTICLE, CLEAR_ARTICLE, MiAccion} from "./GlobalState";
 

@@ -7,6 +7,9 @@ fichero reducer.ts
 fichero store.ts
 ## Paso 4 Componente que carga el Store
 fichero ReduxApp.tsx (ojo al Provider)
-## Paso 6 Definición de las acciones
-## Paso 7 Definición del listado
-## Paso 8 Definición del formulario
+## Paso 5 Definición de las acciones
+fichero action.ts
+## Paso 6 Definición del listado
+List.tsx
+## Paso 7 Definición del formulario
+Form.tsx
