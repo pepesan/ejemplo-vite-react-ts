@@ -1,6 +1,6 @@
 // Paso 5: Define las acciones realizables y las Props
 
-import {ADD_ARTICLE, CLEAR_ARTICLE, MiAccion} from "./GlobalState";
+import {ADD_ARTICLE, CLEAR_ARTICLE, MiAccion} from "./GlobalState.ts";
 
 export function addArticle(payload: string): MiAccion {
     return { type: ADD_ARTICLE, payload };
@@ -8,8 +8,6 @@ export function addArticle(payload: string): MiAccion {
 export function clearArticle(): MiAccion {
     return { type: CLEAR_ARTICLE, payload: "" };
 }
-export interface MisProps {
-    articles: string[],
-    addArticle: (payload: string) => void
-    clearArticle: () => void
-}
+
+
+

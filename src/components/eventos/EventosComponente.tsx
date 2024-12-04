@@ -13,7 +13,7 @@ class  EventosComponente extends Component<never, EstadoBoton>{
 
     constructor(props: Readonly<never>){
         super(props);
-        //console.log(this.state);
+        //console.log(this.store);
         //asociación de los métodos a atributos
         this.pulsame = this.pulsame.bind(this);
         this.increment = this.increment.bind(this);

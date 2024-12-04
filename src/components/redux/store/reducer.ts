@@ -2,7 +2,7 @@
 // definición del reducer
 
 // importación de las definiciones del Estado Global
-import {ADD_ARTICLE, CLEAR_ARTICLE, GlobalState, MiAccion} from "./GlobalState";
+import {ADD_ARTICLE, CLEAR_ARTICLE, GlobalState, MiAccion} from "./GlobalState.ts";
 
 // Inicialización del Estado inicial
 const initialState = {

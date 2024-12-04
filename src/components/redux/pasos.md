@@ -1,6 +1,6 @@
 # Listado de pasos
 ## Paso 1 Definición del estado global
-fichero GlobalState.tsx
+fichero GlobalState.ts
 ## Paso 2 Definición del reducer
 fichero reducer.ts
 ## Paso 3 Creación del Store

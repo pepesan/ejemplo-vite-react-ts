@@ -2,18 +2,27 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import { connect } from "react-redux";
 import { Dispatch } from "redux";
-import { addArticle, clearArticle, MisProps } from "./action";
+import { addArticle, clearArticle } from ".././store/action.ts";
+
+// define el interfaz con las props que necesita
+interface FormMisProps {
+  // acción de añadir artículo
+  addArticle: (payload: string) => void
+  // acción de borrar todos los artículos
+  clearArticle: () => void
+}
 
 // Función que mapea el dispatch a props
 function mapDispatchToProps(dispatch: Dispatch) {
   return {
+    // la prop addArticle es mapeada al lanzamiento de una acción con dispatch
     addArticle: (article: string) => dispatch(addArticle(article)),
     clearArticle: () => dispatch(clearArticle()),
   };
 }
 
 // Componente funcional conectado
-const ConnectedForm: React.FC<MisProps> = (props) => {
+const ConnectedForm: React.FC<FormMisProps> = (props) => {
   const [title, setTitle] = useState<string>("");
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
