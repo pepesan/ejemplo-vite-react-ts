@@ -1,6 +1,6 @@
 // Paso 1: Definiciones del Estado
 
-// definición del store Glocal
+// definición del store Global
 export interface GlobalState {
     articles: string []
 }
