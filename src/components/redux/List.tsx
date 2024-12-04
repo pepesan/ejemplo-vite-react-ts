@@ -2,14 +2,12 @@
 import React from "react";
 import { connect } from "react-redux";
 import { GlobalState } from "./GlobalState";
-import { addArticle, clearArticle, MisProps } from "./action";
+import { MisProps } from "./action";
 
 // Mapea el estado a las props
 const mapStateToProps = (state: GlobalState) => {
   return {
-    articles: state.articles,
-    addArticle: addArticle,
-    clearArticle: clearArticle,
+    articles: state.articles
   };
 };
 
