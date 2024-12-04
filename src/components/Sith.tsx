@@ -4,7 +4,7 @@ function Sith (){
     // devuelve el valor de la plantilla
     return(
         <div>
-            <p className="sith-box"> I'm Bad, you know!</p>
+            <p className="sith-box">I'm Bad, you know!</p>
         </div>
     )
 }

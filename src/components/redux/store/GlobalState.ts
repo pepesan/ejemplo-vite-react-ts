@@ -1,11 +1,13 @@
 // Paso 1: Definiciones del Estado
 
 // definición del store Global
+import {UnknownAction} from "redux";
+
 export interface GlobalState {
     articles: string []
 }
 // definición de la acción
-export interface MiAccion {
+export interface MiAccion extends UnknownAction{
     // tipo de acción
     type: string,
     // datos a recibir por parte de la acción

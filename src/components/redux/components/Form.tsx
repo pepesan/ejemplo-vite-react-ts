@@ -1,8 +1,9 @@
 // Paso 7: Componente de Formulario (Funcional)
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import { connect } from "react-redux";
-import { Dispatch } from "redux";
+import {Dispatch} from "redux";
 import { addArticle, clearArticle } from ".././store/action.ts";
+import {MiAccion} from "../store/GlobalState.ts";
 
 // define el interfaz con las props que necesita
 interface FormMisProps {
@@ -16,8 +17,8 @@ interface FormMisProps {
 function mapDispatchToProps(dispatch: Dispatch) {
   return {
     // la prop addArticle es mapeada al lanzamiento de una acción con dispatch
-    addArticle: (article: string) => dispatch(addArticle(article)),
-    clearArticle: () => dispatch(clearArticle()),
+    addArticle: (article: string) => dispatch<MiAccion>(addArticle(article)),
+    clearArticle: () => dispatch<MiAccion>(clearArticle()),
   };
 }
 
